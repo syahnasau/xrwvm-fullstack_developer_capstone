@@ -1,9 +1,47 @@
 <html>
+
 <head>
-  <!-- Link the style sheet here -->
+     <!-- Link the style sheet here -->
+     <link rel="stylesheet" href="/static/style.css">
+     <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+     <style>
+          * {
+               font-family: "Poppins", sans-serif;
+          }
+
+
+          .hero {
+               background-image: url('/static/about/about.png');
+               background-size: cover;
+               background-position: center;
+               color: white;
+               padding: 130px 0;
+               text-align: center;
+          }
+
+          .team-member img {
+               width: 100%;
+               height: auto;
+          }
+
+          .team-member {
+               text-align: center;
+          }
+
+          .navbar-brand, .nav-link {
+            color: black !important;
+          }
+
+          .navbar {
+               padding-left: 100px;
+               padding-right: 100px;
+          }
+     </style>
+
 </head>
 <div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+     <!-- <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,46 +61,108 @@
         </ul>
       </div>
     </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
+  </nav> -->
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
+     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">DEALERSHIPS</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+               </ul>
+               <ul class="navbar-nav ml-right">
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+               </ul>
+          </div>
+     </nav> -->
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    
+
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+               <h3 style="padding-right: 5%;">BestCars</h2>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="d-flex justify-content-center navbar-nav me-auto mb-2 ms-5 mb-lg-0 ">
+                         <li class="nav-item ">
+                              <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+                         </li>
+                         <li class="nav-item mx-4">
+                              <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+                         </li>
+                         <li class="nav-item mx-4">
+                              <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+
+                    </ul>
+                    <form class="d-flex mb-2 mb-lg-0" role="search">
+                         <button class="btn me-5" type="submit">Login</button>
+                         <button class="btn btn-outline-dark px-5" type="submit">Register</button>
+                    </form>
+               </div>
+          </div>
+     </nav>
+
+     <section class="hero">
+          <h1 class="fw-bold">About Us</h1>
+          <p class="px-4 text-break">Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.</p>
+     </section>
+
+     <section class="container my-5">
+          <div class="row">
+               <div class="col-md-4 team-member">
+                    <div class="card shadow-p bg-body-primary">
+                         <img src="/static/about/person1.png" alt="John Willion" class="">
+                         <div class="card-body">
+                              <div class="p-2">
+     
+                                   <h3>John Willion</h3>
+                                   <p class="text-black-50">Chief Executive Officer</p>
+                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                   <p>johnwillion@bestcars.com</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-4 team-member">
+                    <div class="card">
+                         <img src="/static/about/person2.png" alt="Evanna Dea" class="">
+                         <div class="card-body">
+                              <div class="p-2">
+                                   <h3>Evanna Dea</h3>
+                                   <p class="text-black-50">Chief Executive Officer</p>
+                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                   <p>evanna.dea@bestcars.com</p>
+                              </div>
+                         </div>
+                         
+                    </div>
+               </div>
+               <div class="col-md-4 team-member">
+                    <div class="card">
+                         <img src="/static/about/person3.png" alt="Boy Steven" class="">
+                         <div class="card-body">
+                              <div class="p-2">
+                                   <h3 class="fw-semibold">Boy Steven</h3>
+                                   <p class="text-black-50">Chief Executive Officer</p>
+                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                                   <p class="">boysteven@bestcars.com</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+</div>
+
 </div>
 
 </html>
